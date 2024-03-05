@@ -11,8 +11,16 @@ export const Contact = ({ contact }) => {
     dispath(deleteContact(contact.id));
   }
 
+  const handleEdit = () => {
+    dispath(editContact(contact));
+  }
+
   return (
-    <li className={css.item}>{contact.name}: {contact.number} <button type="button" onClick={handleDelete}>Delete</button></li>
+    <li className={css.item}>
+      {contact.name}: {contact.number}
+      <button type="button" onClick={handleEdit}>Edit</button>
+      <button type="button" onClick={handleDelete}>Delete</button>
+    </li>
   );
 }
 
