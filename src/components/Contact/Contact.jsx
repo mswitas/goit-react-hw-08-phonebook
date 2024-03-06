@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import css from "./Contact.module.css";
 import { useDispatch } from "react-redux";
-import { deleteContact, editContact } from "../../redux/contacts/operations";
 import { Button } from "@mui/material";
 import { setEdit } from "../../redux/edit/slice";
 import { setDelete } from "../../redux/delete/slice";
