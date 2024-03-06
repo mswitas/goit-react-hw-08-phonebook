@@ -2,9 +2,8 @@ import { Helmet } from "react-helmet";
 
 const styles = {
   container: {
-    minHeight: 'calc(100vh - 50px)',
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'start',
     justifyContent: 'center',
   },
   title: {
@@ -22,7 +21,7 @@ export default function Home() {
       </Helmet>
       <div style={styles.container}>
         <h1 style={styles.title}>
-          Phonebook welcome page{' '}
+          Phonebook{' '}
           <span role="img" aria-label="Greeting icon">
             ☎️ 📖
           </span>
